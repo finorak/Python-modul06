@@ -4,3 +4,9 @@ from .advanced import philosophers_stone, elixir_of_life
 __all__ = [
         "lead_to_gold", "stone_to_gem",
         "philosophers_stone", "elixir_of_life"]
+
+
+def __getattr__(name: str) -> None:
+    raise ImportError(
+            "AttributeError - not exposed"
+            )
