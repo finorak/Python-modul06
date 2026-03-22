@@ -30,9 +30,10 @@ def main() -> str:
         print("Testing late import technique:")
         print('record_spell("Lightning", "air")', end=": ")
         print(record_spell("Lightning", "air"))
+        print()
+        print("Circular dependency curse avoided using late imports!")
     except Exception as e:
         print(e)
-    print()
     print("All spells processed safely!")
     return "done"
 
